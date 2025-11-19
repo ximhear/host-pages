@@ -5,40 +5,122 @@
   <title>지피모바일</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background: #f8f8f8;
-      color: #222;
-      font-family: '맑은 고딕', 'Malgun Gothic', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      margin: 0;
+      overflow: hidden;
+      position: relative;
     }
+
+    body::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+      animation: float 8s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
     .construction {
-      background: #ffecec;
-      border: 2px solid #ff9696;
-      border-radius: 12px;
-      padding: 40px 30px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 24px;
+      padding: 60px 40px;
+      box-shadow:
+        0 8px 32px 0 rgba(31, 38, 135, 0.37),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset;
       text-align: center;
-      max-width: 400px;
+      max-width: 480px;
+      width: 90%;
+      position: relative;
+      z-index: 1;
+      animation: fadeInUp 0.8s ease-out;
     }
+
+    .icon {
+      font-size: 5rem;
+      margin-bottom: 24px;
+      display: block;
+      animation: pulse 2s ease-in-out infinite;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+    }
+
     .construction h1 {
       font-size: 2.5rem;
-      margin: 0 0 16px;
-      color: #d93c3c;
+      font-weight: 700;
+      margin: 0 0 20px;
+      color: #fff;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      letter-spacing: -0.5px;
     }
+
     .construction p {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
       margin: 0;
-      color: #444;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 300;
     }
-    .icon {
-      font-size: 3rem;
-      margin-bottom: 18px;
-      display: block;
+
+    .construction .subtitle {
+      margin-top: 16px;
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 400;
+    }
+
+    @media (max-width: 480px) {
+      .construction {
+        padding: 40px 30px;
+      }
+
+      .construction h1 {
+        font-size: 2rem;
+      }
+
+      .icon {
+        font-size: 4rem;
+      }
+
+      .construction p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -46,8 +128,8 @@
   <div class="construction">
     <span class="icon">🚧</span>
     <h1>공사중입니다</h1>
-    <p>해당 페이지는 현재 공사중입니다.<br>
-      빠른 시일 내에 찾아뵙겠습니다.</p>
+    <p>더 나은 서비스를 준비하고 있습니다.</p>
+    <p class="subtitle">빠른 시일 내에 찾아뵙겠습니다.</p>
   </div>
 </body>
 </html>
