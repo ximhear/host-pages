@@ -3,7 +3,8 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: #fff;
+  background: linear-gradient(180deg, #fff 0%, #f8f9fa 100%);
+  position: relative;
 }
 
 .services-grid {
@@ -17,10 +18,10 @@
 .service-card {
   background: #fff;
   border: 1px solid #e8eaed;
-  border-radius: 16px;
-  padding: 2.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s ease;
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   overflow: hidden;
 }
@@ -31,10 +32,10 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: #1a73e8;
+  height: 5px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
   transform: scaleX(0);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .service-card:hover::before {
@@ -42,29 +43,31 @@
 }
 
 .service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  border-color: #1a73e8;
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
 }
 
 .service-card.featured {
   border: 2px solid #fbbc04;
-  background: #fffbf0;
+  background: linear-gradient(135deg, #fffbf0 0%, #fff5e6 100%);
+  box-shadow: 0 8px 30px rgba(251, 188, 4, 0.2);
 }
 
 .service-card.featured::before {
-  background: #fbbc04;
+  background: linear-gradient(90deg, #fbbc04 0%, #ffa726 100%);
 }
 
 .service-icon {
-  font-size: 4rem;
+  font-size: 4.5rem;
   margin-bottom: 1.5rem;
   display: inline-block;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 .service-card:hover .service-icon {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.2) rotate(5deg);
 }
 
 .service-card h3 {
@@ -115,9 +118,10 @@
 }
 
 .service-badge.new {
-  background: #fbbc04;
+  background: linear-gradient(135deg, #fbbc04 0%, #ffa726 100%);
   color: #fff;
   animation: pulse 2s ease-in-out infinite;
+  box-shadow: 0 2px 8px rgba(251, 188, 4, 0.4);
 }
 
 @keyframes pulse {

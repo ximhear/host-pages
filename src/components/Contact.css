@@ -3,7 +3,8 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: #fff;
+  background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+  position: relative;
 }
 
 .contact-content {
@@ -14,9 +15,9 @@
 .contact-card {
   background: #fff;
   border: 1px solid #e8eaed;
-  border-radius: 16px;
-  padding: 3rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 24px;
+  padding: 4rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
 .contact-info {
@@ -77,23 +78,22 @@
 }
 
 .contact-button {
-  padding: 1rem 3rem;
+  padding: 1.2rem 3.5rem;
   font-size: 1.1rem;
-  font-weight: 600;
-  background: #1a73e8;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #fff;
   border: none;
-  border-radius: 12px;
+  border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   font-family: inherit;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
 }
 
 .contact-button:hover {
-  background: #1557b0;
-  transform: translateY(-2px);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
 }
 
 .footer {
