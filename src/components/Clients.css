@@ -1,0 +1,123 @@
+.clients {
+  padding: 6rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.clients-section,
+.projects-section {
+  margin-bottom: 4rem;
+}
+
+.subsection-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+}
+
+.client-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.3);
+}
+
+.client-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.5);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.client-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.client-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.3);
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(31, 38, 135, 0.4);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.project-flag {
+  font-size: 2.5rem;
+}
+
+.project-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .clients {
+    padding: 4rem 1.5rem;
+  }
+
+  .subsection-title {
+    font-size: 1.6rem;
+  }
+
+  .clients-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .client-card {
+    padding: 1.5rem;
+  }
+
+  .project-card {
+    padding: 1rem 1.5rem;
+  }
+
+  .projects-grid {
+    gap: 1rem;
+  }
+}

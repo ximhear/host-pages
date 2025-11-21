@@ -1,13 +1,21 @@
 import React from 'react'
 import './App.css'
+import Navigation from './components/Navigation'
+import Hero from './components/Hero'
+import About from './components/About'
+import Services from './components/Services'
+import Clients from './components/Clients'
+import Contact from './components/Contact'
 
 const App: React.FC = () => {
   return (
-    <div className="construction">
-      <div className="brand">GPMobile</div>
-      <h1>공사중입니다</h1>
-      <p>더 나은 서비스를 준비하고 있습니다.</p>
-      <p className="subtitle">빠른 시일 내에 찾아뵙겠습니다.</p>
+    <div className="app">
+      <Navigation />
+      <Hero />
+      <About />
+      <Services />
+      <Clients />
+      <Contact />
     </div>
   )
 }
