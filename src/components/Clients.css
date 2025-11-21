@@ -3,6 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  background: #fafafa;
 }
 
 .clients-section,
@@ -15,8 +16,7 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 2.5rem;
-  color: #fff;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  color: #202124;
 }
 
 .clients-grid {
@@ -28,32 +28,31 @@
 }
 
 .client-card {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
+  background: #fff;
+  border: 1px solid #e8eaed;
+  border-radius: 16px;
   padding: 2rem;
   text-align: center;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .client-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.5);
-  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-color: #1a73e8;
 }
 
 .client-name {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
+  color: #202124;
   margin-bottom: 0.5rem;
 }
 
 .client-description {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: #5f6368;
   font-weight: 500;
 }
 
@@ -67,22 +66,21 @@
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  background: #fff;
+  border: 1px solid #e8eaed;
+  border-radius: 12px;
   padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 24px rgba(31, 38, 135, 0.4);
-  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-color: #1a73e8;
 }
 
 .project-flag {
@@ -92,7 +90,7 @@
 .project-name {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #fff;
+  color: #202124;
 }
 
 @media (max-width: 768px) {
