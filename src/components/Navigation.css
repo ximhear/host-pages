@@ -3,10 +3,12 @@
   top: 0;
   left: 0;
   right: 0;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
   z-index: 1000;
   padding: 1rem 0;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.1);
 }
 
 .nav-container {
@@ -19,15 +21,19 @@
 }
 
 .nav-brand {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #1a73e8;
+  font-size: 1.6rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-brand:hover {
-  color: #1557b0;
+  transform: scale(1.05);
+  filter: brightness(1.2);
 }
 
 .nav-menu {
@@ -49,8 +55,8 @@
 }
 
 .nav-menu li a:hover {
-  color: #1a73e8;
-  background: #f1f3f4;
+  color: #667eea;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
 }
 
 .nav-toggle {
