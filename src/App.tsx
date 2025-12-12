@@ -1,24 +1,23 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Navigation from './components/Navigation'
-import Hero from './components/Hero'
-import About from './components/About'
-import Services from './components/Services'
-import Clients from './components/Clients'
-import Contact from './components/Contact'
+import Home from './components/Home'
+import Projects from './components/Projects'
+import ProjectDetail from './components/ProjectDetail'
 import { Analytics } from '@vercel/analytics/react'
 
 const App: React.FC = () => {
   return (
-    <div className="app">
-      <Navigation />
-      <Hero />
-      <About />
-      <Services />
-      <Clients />
-      <Contact />
-      <Analytics />
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
+        </Routes>
+        <Analytics />
+      </div>
+    </BrowserRouter>
   )
 }
 
