@@ -211,44 +211,25 @@ export const projects: Project[] = [
     images: []
   },
   {
-    id: 'gpu-3d-graphics-engine',
-    title: 'GPU 기반 3D 그래픽스 엔진',
-    shortDescription: 'Metal/OpenGL 기반 실시간 3D 렌더링 엔진 개발',
-    fullDescription: 'GPU 가속을 활용한 고성능 3D 그래픽스 엔진을 개발했습니다. Metal과 OpenGL ES를 기반으로 실시간 렌더링, 물리 시뮬레이션, 파티클 시스템을 구현하여 모바일 및 데스크톱 환경에서 뛰어난 시각적 경험을 제공합니다.',
-    category: 'system',
-    client: '자체 개발',
-    year: '2020-현재',
-    technologies: ['Metal', 'OpenGL ES', 'GLSL/MSL', 'C++', 'Swift', 'CUDA'],
-    features: [
-      'GPU 가속 실시간 렌더링',
-      'PBR (물리 기반 렌더링) 지원',
-      '실시간 그림자 및 조명',
-      '파티클 시스템 및 물리 시뮬레이션',
-      '크로스플랫폼 셰이더 시스템'
-    ],
-    thumbnail: '🎮',
-    images: [],
-    badge: 'GPU 가속'
-  },
-  {
-    id: 'opencv-vision-platform',
-    title: 'OpenCV 컴퓨터 비전 플랫폼',
-    shortDescription: 'OpenCV 기반 실시간 영상 처리 및 객체 인식 시스템',
-    fullDescription: 'OpenCV와 GPU 가속을 활용한 고성능 컴퓨터 비전 플랫폼을 개발했습니다. 실시간 영상 처리, 객체 감지, 얼굴 인식, 모션 트래킹 등 다양한 비전 기능을 제공하며, 산업용 검사 시스템 및 스마트 보안 솔루션에 적용되고 있습니다.',
+    id: 'gpu-3d-opencv-platform',
+    title: 'GPU 기반 3D & 컴퓨터 비전 플랫폼',
+    shortDescription: 'Metal/OpenGL과 OpenCV를 활용한 GPU 가속 영상처리 및 3D 시각화 플랫폼',
+    fullDescription: 'GPU 가속 기술을 활용하여 실시간 3D 렌더링과 컴퓨터 비전을 통합한 플랫폼을 개발했습니다. Metal, OpenGL ES를 통한 고성능 3D 시각화와 OpenCV 기반의 영상 처리, 객체 인식 기능을 결합하여 AR/VR 애플리케이션, 산업용 검사 시스템, 실시간 영상 분석 솔루션 등 다양한 분야에 적용하고 있습니다.',
     category: 'ai',
     client: '다수 기업',
     year: '2019-현재',
-    technologies: ['OpenCV', 'CUDA', 'Python', 'C++', 'TensorRT', 'ONNX'],
+    technologies: ['Metal', 'OpenGL ES', 'OpenCV', 'CUDA', 'C++', 'Swift', 'Python', 'TensorRT'],
     features: [
+      'GPU 가속 실시간 3D 렌더링',
+      'OpenCV 기반 영상 처리 파이프라인',
       '실시간 객체 감지 및 추적',
-      'GPU 가속 영상 처리 파이프라인',
-      '얼굴 인식 및 감정 분석',
-      '산업용 불량 검출 시스템',
-      '모션 캡처 및 제스처 인식'
+      '3D 포인트 클라우드 처리',
+      '얼굴 인식 및 모션 캡처',
+      '산업용 불량 검출 시스템'
     ],
-    thumbnail: '👁️',
+    thumbnail: '🖥️',
     images: [],
-    badge: 'AI 비전'
+    badge: 'GPU/AI'
   }
 ]
 
