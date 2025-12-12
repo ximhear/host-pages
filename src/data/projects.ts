@@ -209,6 +209,46 @@ export const projects: Project[] = [
     ],
     thumbnail: '🔧',
     images: []
+  },
+  {
+    id: 'gpu-3d-graphics-engine',
+    title: 'GPU 기반 3D 그래픽스 엔진',
+    shortDescription: 'Metal/OpenGL 기반 실시간 3D 렌더링 엔진 개발',
+    fullDescription: 'GPU 가속을 활용한 고성능 3D 그래픽스 엔진을 개발했습니다. Metal과 OpenGL ES를 기반으로 실시간 렌더링, 물리 시뮬레이션, 파티클 시스템을 구현하여 모바일 및 데스크톱 환경에서 뛰어난 시각적 경험을 제공합니다.',
+    category: 'system',
+    client: '자체 개발',
+    year: '2020-현재',
+    technologies: ['Metal', 'OpenGL ES', 'GLSL/MSL', 'C++', 'Swift', 'CUDA'],
+    features: [
+      'GPU 가속 실시간 렌더링',
+      'PBR (물리 기반 렌더링) 지원',
+      '실시간 그림자 및 조명',
+      '파티클 시스템 및 물리 시뮬레이션',
+      '크로스플랫폼 셰이더 시스템'
+    ],
+    thumbnail: '🎮',
+    images: [],
+    badge: 'GPU 가속'
+  },
+  {
+    id: 'opencv-vision-platform',
+    title: 'OpenCV 컴퓨터 비전 플랫폼',
+    shortDescription: 'OpenCV 기반 실시간 영상 처리 및 객체 인식 시스템',
+    fullDescription: 'OpenCV와 GPU 가속을 활용한 고성능 컴퓨터 비전 플랫폼을 개발했습니다. 실시간 영상 처리, 객체 감지, 얼굴 인식, 모션 트래킹 등 다양한 비전 기능을 제공하며, 산업용 검사 시스템 및 스마트 보안 솔루션에 적용되고 있습니다.',
+    category: 'ai',
+    client: '다수 기업',
+    year: '2019-현재',
+    technologies: ['OpenCV', 'CUDA', 'Python', 'C++', 'TensorRT', 'ONNX'],
+    features: [
+      '실시간 객체 감지 및 추적',
+      'GPU 가속 영상 처리 파이프라인',
+      '얼굴 인식 및 감정 분석',
+      '산업용 불량 검출 시스템',
+      '모션 캡처 및 제스처 인식'
+    ],
+    thumbnail: '👁️',
+    images: [],
+    badge: 'AI 비전'
   }
 ]
 
