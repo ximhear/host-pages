@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
 
           <h1 className="hero-title">
             <span className="title-main">GPMobile</span>
-            <span className="title-sub">17년간 쌓아온 모바일 기술력</span>
+            <span className="title-sub">비즈니스의 내일을 만드는 기술</span>
           </h1>
 
           <p className="hero-description">
@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
 
           <div className="hero-stats">
             <div className="stat-item">
-              <div className="stat-value">17+</div>
+              <div className="stat-value">{new Date().getFullYear() - 2007}+</div>
               <div className="stat-label">년 경험</div>
             </div>
             <div className="stat-item">
