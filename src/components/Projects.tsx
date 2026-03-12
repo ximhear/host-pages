@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
           </Link>
           <h1 className="projects-title">프로젝트 & 성과</h1>
           <p className="projects-subtitle">
-            17년간 쌓아온 GPMobile의 기술력과 성과를 확인하세요
+            GPMobile의 기술력과 성과를 확인하세요
           </p>
         </div>
       </div>
@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
             <span className="stat-label">완료된 프로젝트</span>
           </div>
           <div className="stat-item">
-            <span className="stat-number">17년</span>
+            <span className="stat-number">{new Date().getFullYear() - 2007}년</span>
             <span className="stat-label">업계 경력</span>
           </div>
           <div className="stat-item">
@@ -67,7 +67,6 @@ const Projects: React.FC = () => {
                   <span className="project-category">
                     {categories.find(c => c.id === project.category)?.name}
                   </span>
-                  <span className="project-year">{project.year}</span>
                 </div>
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.shortDescription}</p>
@@ -83,11 +82,6 @@ const Projects: React.FC = () => {
                     <span className="tech-tag more">+{project.technologies.length - 3}</span>
                   )}
                 </div>
-                {project.badge && (
-                  <div className={`project-badge ${project.badge === 'NEW' ? 'new' : ''}`}>
-                    {project.badge}
-                  </div>
-                )}
               </div>
               <div className="project-hover-overlay">
                 <span className="view-detail">자세히 보기 &rarr;</span>

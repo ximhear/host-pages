@@ -15,6 +15,44 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 'greece-athena-go',
+    title: '그리스 Athena.go',
+    shortDescription: '그리스 교통 플랫폼 Athena.go iOS/Android 앱 개발',
+    fullDescription: '그리스 아테네의 교통 서비스 플랫폼 Athena.go의 iOS 및 Android 앱을 개발했습니다. 대중교통 노선 검색, 실시간 운행 정보, 교통카드 연동 등 아테네 시민과 관광객을 위한 통합 모빌리티 서비스를 제공합니다.',
+    category: 'mobile',
+    client: 'Athena.go (그리스)',
+    year: '2024-현재',
+    technologies: ['iOS', 'Android', 'Swift', 'Kotlin'],
+    features: [
+      'iOS/Android 네이티브 앱 개발',
+      '대중교통 노선 검색',
+      '실시간 운행 정보 제공',
+      '교통카드 연동',
+      '다국어 지원'
+    ],
+    thumbnail: '🇬🇷',
+    images: []
+  },
+  {
+    id: 'busan-smart-city',
+    title: '부산 스마트시티',
+    shortDescription: '부산 스마트시티 통합 플랫폼 개발',
+    fullDescription: '부산 스마트시티 프로젝트의 통합 플랫폼을 개발했습니다. 도시 데이터 수집·분석, 시민 서비스 앱, 관제 시스템 등을 구축하여 교통, 환경, 안전 등 다양한 도시 서비스를 스마트하게 연결하는 플랫폼을 제공합니다.',
+    category: 'system',
+    client: '부산광역시',
+    year: '2024-현재',
+    technologies: ['Server', 'Android', 'iOS', 'IoT', 'Data Platform'],
+    features: [
+      '스마트시티 통합 플랫폼 구축',
+      '도시 데이터 수집 및 분석',
+      '시민 서비스 앱 개발',
+      '관제 시스템 연동',
+      '교통·환경·안전 서비스 통합'
+    ],
+    thumbnail: '🏙️',
+    images: []
+  },
+  {
     id: 'denti-i',
     title: '덴티아이 모바일앱 & 웹',
     shortDescription: '어린이 치과주치의 플랫폼 iOS/Android 앱 및 웹 개발',
