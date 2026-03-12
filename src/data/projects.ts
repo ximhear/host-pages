@@ -15,200 +15,240 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'samsung-mobile-solution',
-    title: '삼성전자 모바일 솔루션',
-    shortDescription: '삼성전자 스마트폰 내장 앱 및 시스템 솔루션 개발',
-    fullDescription: '삼성전자와 협력하여 갤럭시 시리즈 스마트폰에 탑재되는 다양한 내장 앱과 시스템 솔루션을 개발했습니다. 안정적인 성능과 사용자 친화적인 UI/UX를 구현하여 수백만 사용자에게 서비스를 제공하고 있습니다.',
+    id: 'denti-i',
+    title: '덴티아이 모바일앱 & 웹',
+    shortDescription: '어린이 치과주치의 플랫폼 iOS/Android 앱 및 웹 개발',
+    fullDescription: '덴티아이는 어린이 치아 건강을 한눈에 관리할 수 있는 치과주치의 플랫폼입니다. 병원 방문 전 모바일 문진표 작성, 검진 결과 통보서 리포트, 구강건강 교육 콘텐츠 등 종합적인 구강 관리 기능을 제공하는 iOS/Android 앱과 웹 서비스를 개발했습니다.',
     category: 'mobile',
-    client: '삼성전자',
-    year: '2015-2023',
-    technologies: ['Android', 'Java', 'Kotlin', 'C++', 'JNI'],
+    client: '카이아이컴퍼니',
+    year: '2022-현재',
+    technologies: ['iOS', 'Android', 'Web', 'REST API'],
     features: [
-      '네이티브 Android 앱 개발',
-      '시스템 레벨 최적화',
-      'One UI 통합',
-      '하드웨어 연동 솔루션',
-      '배터리 효율 최적화'
+      '덴티아이 경기 모바일앱(iOS, aOS) 개발',
+      '검진유형 자격검사 및 교육과 검진 안내',
+      '구강검사 결과 조회 업데이트',
+      '모바일 문진표 작성 기능',
+      '통보서 리포트 및 교육 콘텐츠'
+    ],
+    thumbnail: '🦷',
+    images: [],
+    badge: '진행 중'
+  },
+  {
+    id: 'lgu-membership',
+    title: 'LGU+ 멤버십 앱',
+    shortDescription: 'LGU+ 멤버십 앱 iOS/Android 개발',
+    fullDescription: 'LGU+ 멤버십 앱의 iOS 및 Android 버전을 개발했습니다. 휴대폰 소액결제, 메인화면 개발, 마이 멤버십 화면, 내 지갑 기능 등 멤버십 서비스의 핵심 기능을 구현하여 편의점, 쇼핑, 영화, 푸드, 교통 등 다양한 할인 혜택을 제공합니다.',
+    category: 'mobile',
+    client: 'LGU+',
+    year: '2022-현재',
+    technologies: ['iOS', 'Android', 'Native'],
+    features: [
+      'iOS, aOS 네이티브 앱 개발',
+      '휴대폰 소액결제 기능',
+      '메인화면 및 마이 멤버십 화면 개발',
+      '내 지갑 기능 구현',
+      '편의점·쇼핑·영화·교통 할인 연동'
     ],
     thumbnail: '📱',
     images: [],
-    badge: '대표 프로젝트'
+    badge: '진행 중'
   },
   {
-    id: 'ahnlab-security-app',
-    title: '안랩 보안 솔루션 앱',
-    shortDescription: '모바일 보안 솔루션 및 백신 앱 개발',
-    fullDescription: '안랩과 협력하여 모바일 보안 솔루션을 개발했습니다. 실시간 악성코드 탐지, 개인정보 보호, 앱 잠금 기능 등 종합적인 보안 기능을 제공하는 앱을 구현했습니다.',
+    id: 'sk-energy-muffin-truck',
+    title: 'SK에너지 머핀트럭',
+    shortDescription: 'SK에너지 머핀트럭 상용차 운송 서비스 앱 개발',
+    fullDescription: 'SK에너지 머핀트럭 서비스의 Android 앱과 프론트엔드를 개발했습니다. 상용차 고객을 위한 운송업무 처리, 세무장부 서비스, 실적관리 등 모든 운송 관련 서비스를 하나의 앱에서 제공하며, 운송료 확인 및 미요청 건 관리, 지도 기반 배차 기능을 포함합니다.',
     category: 'mobile',
-    client: '안랩',
-    year: '2018-2022',
-    technologies: ['Android', 'iOS', 'Swift', 'Kotlin', 'Security SDK'],
+    client: 'SK에너지',
+    year: '2022-현재',
+    technologies: ['Android', 'Server', 'Frontend', 'Map API'],
     features: [
-      '실시간 악성코드 스캔',
-      '개인정보 보호 기능',
-      '앱 잠금 및 권한 관리',
-      '네트워크 보안 모니터링',
-      '원격 기기 관리'
+      '안드로이드 앱 개발',
+      '프론트엔드 개발',
+      '운송업무 처리 서비스',
+      '세무장부 서비스 지원',
+      '실적관리 및 지도 기반 배차'
+    ],
+    thumbnail: '🚛',
+    images: []
+  },
+  {
+    id: 'kyobo-mydata',
+    title: '교보증권 MyData 서비스',
+    shortDescription: '교보증권 MyData iOS 앱 및 웹서비스 개발',
+    fullDescription: '교보증권의 MyData 서비스를 위한 iOS 앱과 웹서비스를 개발했습니다. 자산 및 계좌 현황 조회, 통합인증, 커뮤니티, 비금융자산 관리 등의 기능을 구현하여 고객이 자신의 금융 데이터를 한곳에서 통합 관리할 수 있도록 했습니다.',
+    category: 'mobile',
+    client: '교보증권',
+    year: '2022-현재',
+    technologies: ['iOS', 'Web', 'MyData API', 'Swift'],
+    features: [
+      'iOS 네이티브 앱 개발',
+      '자산 및 계좌 현황 조회',
+      'MyData 웹 서비스 개발',
+      '통합인증 및 커뮤니티 기능',
+      '비금융자산 관리'
+    ],
+    thumbnail: '💹',
+    images: []
+  },
+  {
+    id: 'skt-spam-filtering',
+    title: 'SKT 스팸 필터링 서비스',
+    shortDescription: 'SK텔레콤 T스팸필터링 서비스 유지보수 및 운영',
+    fullDescription: 'SK텔레콤의 T스팸필터링 서비스의 알고리즘 유지보수 및 운영을 담당하고 있습니다. 번호, 문장, 문자열 차단, 이미지, URL 차단 알고리즘을 개발하고 T스팸필터링앱 연동, WAP 연동 기능, Android/iOS 지원을 통해 사용자를 스팸으로부터 보호합니다.',
+    category: 'system',
+    client: 'SK텔레콤',
+    year: '2021-현재',
+    technologies: ['Android', 'iOS', 'Algorithm', 'WAP'],
+    features: [
+      'SKT 스팸필터링 알고리즘 유지보수',
+      '번호·문장·문자열·이미지·URL 차단',
+      'T스팸필터링앱 연동',
+      'WAP 연동 기능',
+      'Android/iOS 지원'
     ],
     thumbnail: '🛡️',
     images: [],
-    badge: '보안 전문'
+    badge: '운영 중'
   },
   {
-    id: 'infraware-office-mobile',
-    title: '인프라웨어 오피스 모바일',
-    shortDescription: '모바일 오피스 문서 뷰어 및 편집기 개발',
-    fullDescription: '인프라웨어와 함께 모바일 환경에서 오피스 문서를 완벽하게 열람하고 편집할 수 있는 솔루션을 개발했습니다. Word, Excel, PowerPoint, PDF 등 다양한 포맷을 지원합니다.',
-    category: 'mobile',
-    client: '인프라웨어',
-    year: '2016-2021',
-    technologies: ['Android', 'iOS', 'C++', 'OpenGL', 'PDF Engine'],
-    features: [
-      '다양한 문서 포맷 지원',
-      '고속 렌더링 엔진',
-      '클라우드 동기화',
-      '문서 편집 기능',
-      '주석 및 필기 기능'
-    ],
-    thumbnail: '📄',
-    images: []
-  },
-  {
-    id: 'sk-commerce-platform',
-    title: 'SK 커머스 플랫폼',
-    shortDescription: '대규모 이커머스 모바일 플랫폼 개발',
-    fullDescription: 'SK 커머스의 모바일 쇼핑 플랫폼 개발에 참여했습니다. 수백만 사용자를 위한 안정적인 서비스와 매끄러운 쇼핑 경험을 제공하는 앱을 구현했습니다.',
-    category: 'mobile',
-    client: 'SK 커머스',
-    year: '2019-2022',
-    technologies: ['React Native', 'TypeScript', 'Node.js', 'AWS'],
-    features: [
-      '하이브리드 앱 개발',
-      '실시간 재고 관리',
-      '결제 시스템 통합',
-      '개인화 추천 시스템',
-      '푸시 알림 서비스'
-    ],
-    thumbnail: '🛒',
-    images: []
-  },
-  {
-    id: 'ai-stock-prediction',
-    title: 'AI 주식 예측 서비스',
-    shortDescription: '인공지능 기반 주가 예측 및 분석 플랫폼',
-    fullDescription: '딥러닝과 머신러닝 기술을 활용한 주식 시장 분석 및 예측 서비스입니다. 실시간 데이터 분석, 패턴 인식, 예측 모델을 통해 투자자들에게 인사이트를 제공합니다.',
-    category: 'ai',
-    client: '자체 서비스',
-    year: '2023-현재',
-    technologies: ['Python', 'TensorFlow', 'PyTorch', 'React', 'FastAPI', 'AWS'],
-    features: [
-      'AI 기반 주가 예측 모델',
-      '실시간 시장 데이터 분석',
-      '빅데이터 기반 트렌드 분석',
-      '포트폴리오 최적화 추천',
-      '리스크 관리 알림'
-    ],
-    thumbnail: '📊',
-    images: [],
-    badge: 'NEW'
-  },
-  {
-    id: 'uk-financial-app',
-    title: '영국 금융 서비스 앱',
-    shortDescription: '영국 금융기관 모바일 뱅킹 앱 개발',
-    fullDescription: '영국 금융기관의 모바일 뱅킹 앱을 개발했습니다. 엄격한 금융 규제 준수와 보안 요구사항을 충족하면서 사용자 친화적인 뱅킹 경험을 제공합니다.',
-    category: 'mobile',
-    client: 'UK Financial Services',
-    year: '2017-2019',
-    technologies: ['iOS', 'Swift', 'Security Framework', 'Biometric Auth'],
-    features: [
-      '생체 인증 로그인',
-      '실시간 잔액 조회',
-      '국제 송금 서비스',
-      'PCI DSS 준수',
-      '다국어 지원'
-    ],
-    thumbnail: '🇬🇧',
-    images: [],
-    badge: '해외 프로젝트'
-  },
-  {
-    id: 'japan-iot-platform',
-    title: '일본 IoT 플랫폼',
-    shortDescription: '일본 기업용 IoT 통합 관리 플랫폼',
-    fullDescription: '일본 기업을 위한 IoT 기기 통합 관리 플랫폼을 개발했습니다. 수천 개의 센서와 기기를 실시간으로 모니터링하고 관리할 수 있는 시스템입니다.',
-    category: 'system',
-    client: 'Japan Tech Corp',
-    year: '2020-2022',
-    technologies: ['React', 'Node.js', 'MQTT', 'InfluxDB', 'Docker'],
-    features: [
-      '실시간 센서 데이터 수집',
-      '대시보드 시각화',
-      '이상 감지 알림',
-      '기기 원격 제어',
-      '데이터 분석 리포트'
-    ],
-    thumbnail: '🇯🇵',
-    images: [],
-    badge: '해외 프로젝트'
-  },
-  {
-    id: 'public-service-portal',
-    title: '공공 서비스 포털',
-    shortDescription: '정부 기관 통합 민원 서비스 포털',
-    fullDescription: '정부 기관의 통합 민원 서비스 포털을 개발했습니다. 시민들이 다양한 민원을 온라인으로 쉽게 신청하고 처리 상황을 확인할 수 있는 시스템입니다.',
+    id: 'wemakeprice-travel',
+    title: '위메프 여행·공연 IT 시스템',
+    shortDescription: '위메프 여행, 공연 IT 시스템 개발 및 운영',
+    fullDescription: '위메프 여행 및 공연 서비스의 backend/frontend/admin 시스템을 개발·운영하고 있습니다. 제주 실시간 렌터카 서비스, 메인 화면 동적 구성, 세종문화회관 API 연동 등 Vue.js와 Spring Boot 프레임워크를 활용하여 여행·공연 통합 플랫폼을 구축했습니다.',
     category: 'web',
-    client: '정부기관',
-    year: '2021-2023',
-    technologies: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Redis'],
+    client: '위메프',
+    year: '2021-현재',
+    technologies: ['Vue.js', 'Spring Boot', 'Server', 'REST API'],
     features: [
-      '통합 인증 시스템',
-      '전자 문서 처리',
-      '실시간 처리 현황',
-      '모바일 연동',
-      '접근성 준수 (WCAG)'
+      '위메프 여행 backend/frontend/admin 개발',
+      '제주 실시간 렌터카 서비스',
+      '메인 화면 동적 구성 서비스',
+      '위메프 공연 세종문화회관 연동',
+      '예약/결제 기능 개발'
     ],
-    thumbnail: '🏛️',
+    thumbnail: '✈️',
     images: []
   },
   {
-    id: 'blackberry-enterprise',
-    title: 'BlackBerry 기업용 앱',
-    shortDescription: 'BlackBerry 플랫폼 기업용 보안 앱 개발',
-    fullDescription: 'BlackBerry 플랫폼을 위한 기업용 보안 애플리케이션을 개발했습니다. 기업 데이터 보안과 MDM(Mobile Device Management) 기능을 제공합니다.',
-    category: 'mobile',
-    client: 'Enterprise Clients',
-    year: '2010-2016',
-    technologies: ['BlackBerry SDK', 'Java ME', 'BES Integration'],
-    features: [
-      '기업 이메일 보안',
-      'MDM 통합',
-      '암호화 메시징',
-      '원격 데이터 삭제',
-      '정책 관리'
-    ],
-    thumbnail: '📟',
-    images: [],
-    badge: '레거시'
-  },
-  {
-    id: 'cross-platform-framework',
-    title: '크로스플랫폼 개발 프레임워크',
-    shortDescription: 'iOS/Android 통합 개발 프레임워크',
-    fullDescription: '하나의 코드베이스로 iOS와 Android 앱을 동시에 개발할 수 있는 자체 프레임워크를 구축했습니다. 개발 효율성을 높이고 유지보수 비용을 절감합니다.',
+    id: 'kb-next-liveon',
+    title: 'KB국민은행 NEXT 리브온',
+    shortDescription: 'KB국민은행 MSA 기반 NEXT 리브온 구축(고도화)',
+    fullDescription: 'KB국민은행의 MSA 기반 NEXT 리브온 서비스를 구축 및 고도화했습니다. FAN머니 오픈(결제, 충전, 보내기, 받기, 조르기), 더치페이, FAN 선불 교통카드 등 다양한 금융 서비스의 backend/frontend 개발을 수행했습니다.',
     category: 'system',
-    client: '자체 개발',
-    year: '2019-현재',
-    technologies: ['React Native', 'Flutter', 'TypeScript', 'Native Modules'],
+    client: 'KB국민은행',
+    year: '2020-2021',
+    technologies: ['Server', 'MSA', 'Backend', 'Frontend'],
     features: [
-      '단일 코드베이스',
-      '네이티브 성능',
-      '핫 리로드 지원',
-      '네이티브 모듈 연동',
-      '자동화 빌드 파이프라인'
+      'FAN머니 결제·충전·보내기·받기·조르기',
+      '더치페이 기능 개발',
+      'FAN 선불 교통카드 개발',
+      'backend/frontend 개발',
+      'MSA 아키텍처 기반 구축'
     ],
-    thumbnail: '🔧',
+    thumbnail: '🏦',
+    images: [],
+    badge: '금융'
+  },
+  {
+    id: 'hyundai-dm-system',
+    title: '현대자동차 DM System',
+    shortDescription: '현대자동차 Device Management System(AVN, 제어기) 개발',
+    fullDescription: '현대자동차의 AVN(Audio Video Navigation) 및 제어기를 위한 Device Management System을 Spring/Java로 개발했습니다. Portal 연동 인터페이스 솔루션, 단말 파일 등록 연동, CDN 서버 연동 등 차량 소프트웨어 관리를 위한 서버 시스템을 구축했습니다.',
+    category: 'system',
+    client: '현대자동차',
+    year: '2017-2021',
+    technologies: ['Spring', 'Java', 'CDN', 'Portal'],
+    features: [
+      'Spring/Java 기반 DM 시스템 개발',
+      'Portal 연동 인터페이스 솔루션',
+      '단말 파일 등록 연동',
+      'CDN 서버 파일 다운로드 연동',
+      'FOTA 서비스 및 패키지 관리'
+    ],
+    thumbnail: '🚗',
+    images: [],
+    badge: '자동차'
+  },
+  {
+    id: 'ahnlab-prima-v3',
+    title: '안랩 Prima & V3 Mobile',
+    shortDescription: '안랩 개인정보 관리 앱 및 V3 Mobile 서비스 개발',
+    fullDescription: '안랩의 PriMa(Privacy Manager) 앱과 V3 Mobile 서비스를 개발했습니다. Prima는 디바이스 취약점 검사, 소셜 미디어 보안, 보안 메모, 이미지 검사, 모자이크 기능을 제공하며, V3 Mobile은 비밀번호 관리, 갤러리 숨김, 분실 기기 제어, 보안 브라우저 등 종합 보안 서비스를 iOS/Android로 제공합니다.',
+    category: 'mobile',
+    client: '안랩',
+    year: '2016-2021',
+    technologies: ['Android', 'iOS', 'Server', 'Security SDK'],
+    features: [
+      '디바이스 취약점 검사 및 해결',
+      '소셜 미디어 보안 설정 관리',
+      '보안 메모 암호화 및 OCR 기능',
+      '비밀번호 관리 및 갤러리 숨김',
+      '분실 기기 위치 확인 및 원격 제어'
+    ],
+    thumbnail: '🔒',
+    images: [],
+    badge: '보안'
+  },
+  {
+    id: 'tmoney-go',
+    title: '티머니 go',
+    shortDescription: '티머니 go 통합 모빌리티 앱 개발 및 운영',
+    fullDescription: '티머니 go 앱의 iOS/Android 개발 및 운영을 담당하고 있습니다. 따릉이·씽씽 대여, 대중교통/따릉이 경로검색, 마일리지 적립/환급, FAN 충전 연동 등 통합 모빌리티 서비스를 제공하며, 사용자가 다양한 교통수단을 하나의 앱에서 이용할 수 있도록 구현했습니다.',
+    category: 'mobile',
+    client: 'LG CNS / 티머니',
+    year: '2019-현재',
+    technologies: ['iOS', 'Android', 'Map API', 'Payment'],
+    features: [
+      '따릉이·씽씽 대여 서비스',
+      '대중교통/따릉이 경로검색',
+      '마일리지 적립 및 환급',
+      'FAN 충전 연동',
+      '통합 모빌리티 플랫폼'
+    ],
+    thumbnail: '🚇',
+    images: [],
+    badge: '모빌리티'
+  },
+  {
+    id: 'tmap-parking',
+    title: 'T map 주차 플랫폼',
+    shortDescription: 'T map 주차 플랫폼 iOS 앱 고도화 개발 및 운영',
+    fullDescription: 'T map 주차 플랫폼의 iOS 앱 고도화 및 운영을 수행했습니다. 주차 현황 상세 구현, 주차장 상세 구현, 쿠폰 변경 적용, 주차장 지도 표시 최적화 등을 개발하고 Jenkins/Fastlane을 이용한 빌드/배포 자동화를 구축했습니다.',
+    category: 'mobile',
+    client: 'SKT / SK플래닛',
+    year: '2020-2021',
+    technologies: ['iOS', 'Swift', 'Jenkins', 'Fastlane', 'Map SDK'],
+    features: [
+      '주차 현황 상세 구현',
+      '주차장 상세 및 쿠폰 적용',
+      '주차장 지도 표시 최적화',
+      'Jenkins/Fastlane 빌드/배포 자동화',
+      '종일권·월정기권 결제 시스템'
+    ],
+    thumbnail: '🅿️',
     images: []
+  },
+  {
+    id: 'shinhancard-fan',
+    title: '신한카드 FAN(앱카드)',
+    shortDescription: '신한카드 FAN 앱카드 서비스 개발 및 운영',
+    fullDescription: '신한카드 FAN 앱카드의 서버 개발 및 유지보수를 담당했습니다. 실시간 마케팅, 더치페이 신규 오픈, FAN머니 신규 오픈, 선불하기 수정개발 등을 수행하고, 이후 Android/iOS 네이티브 앱 개발(신한 판)까지 확장하여 신용카드 관리, QR코드, 바코드 결제, 생체인증 등을 구현했습니다.',
+    category: 'system',
+    client: '신한카드',
+    year: '2017-2020',
+    technologies: ['Server', 'Android', 'iOS', 'Payment', 'Biometric'],
+    features: [
+      '실시간 마케팅 개발',
+      '더치페이·FAN머니 신규 개발',
+      'QR코드·바코드 결제',
+      '생체인증 로그인 시스템',
+      'FAN클럽·포인트·금융 서비스'
+    ],
+    thumbnail: '💳',
+    images: [],
+    badge: '핀테크'
   }
 ]
 

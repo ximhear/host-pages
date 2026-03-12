@@ -1,21 +1,9 @@
 .about {
   padding: 6rem 2rem;
-  min-height: 100vh;
   display: flex;
   align-items: center;
-  background: #fff;
+  background: var(--color-bg);
   position: relative;
-}
-
-.about::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 400px;
-  background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
-  z-index: 0;
 }
 
 .about .container {
@@ -30,15 +18,12 @@
 }
 
 .section-title {
-  font-size: 3.5rem;
-  font-weight: 900;
+  font-size: 2.5rem;
+  font-weight: 800;
   text-align: center;
-  margin-bottom: 4rem;
-  background: linear-gradient(135deg, #202124 0%, #5f6368 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -1px;
+  margin-bottom: 3.5rem;
+  color: var(--color-navy);
+  letter-spacing: -0.5px;
 }
 
 .about-content {
@@ -47,26 +32,26 @@
 }
 
 .about-card {
-  background: #fff;
-  border-radius: 24px;
-  padding: 4rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  background: var(--color-bg);
+  border-radius: var(--radius);
+  padding: 3.5rem;
+  box-shadow: var(--shadow-md);
   max-width: 1100px;
   width: 100%;
-  border: 1px solid #f0f0f0;
+  border: 1px solid var(--color-border);
 }
 
 .about-main h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: #202124;
+  color: var(--color-text);
 }
 
 .about-main p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.8;
-  color: #5f6368;
+  color: var(--color-text-secondary);
   margin-bottom: 1.5rem;
 }
 
@@ -74,9 +59,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 3rem;
-  padding-top: 3rem;
-  border-top: 1px solid #e8eaed;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--color-border);
 }
 
 .stat-item {
@@ -84,18 +69,15 @@
 }
 
 .stat-number {
-  font-size: 3.5rem;
-  font-weight: 900;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-blue);
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
-  font-size: 1rem;
-  color: #5f6368;
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
   font-weight: 500;
 }
 
@@ -105,8 +87,8 @@
   }
 
   .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   .about-card {
@@ -114,11 +96,7 @@
   }
 
   .about-main h3 {
-    font-size: 1.6rem;
-  }
-
-  .about-main p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .about-stats {

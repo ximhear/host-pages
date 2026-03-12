@@ -1,5 +1,8 @@
 import React from 'react'
 import './Services.css'
+import iconMobile from '../assets/icon-mobile.png'
+import iconAiStock from '../assets/icon-ai-stock.png'
+import iconSystem from '../assets/icon-system.png'
 
 const Services: React.FC = () => {
   return (
@@ -8,7 +11,7 @@ const Services: React.FC = () => {
         <h2 className="section-title">사업분야</h2>
         <div className="services-grid">
           <div className="service-card">
-            <div className="service-icon">📱</div>
+            <img src={iconMobile} alt="모바일 앱 개발" className="service-icon-img" />
             <h3>모바일 앱 개발</h3>
             <p className="service-description">
               iOS, Android, 크로스플랫폼 앱 개발 전문
@@ -24,7 +27,7 @@ const Services: React.FC = () => {
           </div>
 
           <div className="service-card featured">
-            <div className="service-icon">📊</div>
+            <img src={iconAiStock} alt="AI 주식 정보" className="service-icon-img" />
             <h3>AI 주식 정보 & 예측</h3>
             <p className="service-description">
               인공지능 기반 주식 시장 분석 및 예측 서비스
@@ -40,7 +43,7 @@ const Services: React.FC = () => {
           </div>
 
           <div className="service-card">
-            <div className="service-icon">🌐</div>
+            <img src={iconSystem} alt="시스템 개발" className="service-icon-img" />
             <h3>시스템 개발</h3>
             <p className="service-description">
               공공 및 민간 부문 맞춤형 시스템 구축
