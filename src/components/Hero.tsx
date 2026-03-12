@@ -17,8 +17,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="hero-description">
-            삼성전자, 안랩 등 대한민국 대표 기업들의<br />
-            신뢰할 수 있는 기술 파트너
+            기술로 산업의 경계를 넓혀갑니다
           </p>
 
           <div className="hero-stats">
